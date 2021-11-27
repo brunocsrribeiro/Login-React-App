@@ -1,25 +1,25 @@
 import React, { Component } from 'react';
 import Form from './Form';
-import image from '../image/undraw_secure_login_pdn4.svg';
+import image from '../image/undraw_shopping_app_flsj.svg';
 
 export default class Main extends Component {
   render() {
     return (
-      <div className="grid grid-cols-2 h-screen">
+      <div className="flex h-screen w-full">
         <section className="
           flex flex-col bg-black
           items-center
-          justify-center"
+          justify-center
+          w-2/3"
         >
-          <div className="flex flex-cols w-1/2 mb-10">
+          <div className="flex flex-cols w-96 mb-10">
             <img src={ image } alt={ image } />
           </div>
           <div className="flex flex-col items-center">
             <h1 className="
               font-extrabold text-5xl
               tracking-tight
-              text-blue-500
-              text-opacity-50"
+              text-indigo-700"
             >
             Seja bem vindo
             </h1>
@@ -31,9 +31,8 @@ export default class Main extends Component {
         
         <section className="
           flex flex-col items-center
-          justify-center
-          bg-white
-          box-border"
+          justify-center bg-white
+          box-border w-1/3"
         >
           <Form />
         </section>
