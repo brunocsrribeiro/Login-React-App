@@ -1,25 +1,25 @@
 import React, { Component } from 'react';
 import { LoginIcon, LockClosedIcon } from '@heroicons/react/outline';
 
-const styleInput = `border-b-2 border-purple-500
+const styleInput = `border-b-2 border-indigo-400
   flex tracking-wide
   focus:outline-none
   p-3 text-center mb-2
-  text-gray-700 font-bold
-  w-full`;
+  text-gray-700 text-sm font-bold
+  w-5/6`;
 
 export default class Form extends Component {
   render() {
     return (
       <>
-        <form className="w-full max-w-lg">
-            <LoginIcon className="relative -bottom-11 -left-1 w-11 text-purple-700" />
+        <form className="flex flex-col items-center w-full max-w-lg">
+            <LoginIcon className="relative -bottom-11 -left-44 w-8 text-indigo-400" />
             <input 
               type="email"
               className= { styleInput }
               placeholder="Email/Usuário"
             />
-            <LockClosedIcon className="relative -bottom-10 -left-1 w-11 text-purple-700" />
+            <LockClosedIcon className="relative -bottom-10 -left-44 w-8 text-indigo-400" />
             <input
               type="password"
               className={ styleInput }
@@ -41,7 +41,7 @@ export default class Form extends Component {
                 text-opacity-80
                 text-white
                 to-blue-400
-                w-full"
+                w-4/6"
             >
               Entrar
             </button>

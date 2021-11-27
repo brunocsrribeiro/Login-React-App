@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { GlobeIcon  } from '@heroicons/react/outline';
 
 export default class Header extends Component {
   render() {
@@ -7,6 +8,7 @@ export default class Header extends Component {
         flex h-16
         bg-gradient-to-r
         from-gray-200
+        justify-between
         to-gray-100"
       >
         <div className="flex items-center box-border p-2 pl-10">
@@ -17,6 +19,9 @@ export default class Header extends Component {
           >
             Login App
           </h1>
+        </div>
+        <div className="flex">
+          <GlobeIcon className="w-1/2 text-indigo-400" />
         </div>
       </nav>
     )
