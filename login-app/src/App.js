@@ -6,10 +6,10 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <div className="fixed w-full border-b-2 border-gray-200">
+        <div>
           <Header />
         </div>
-        <div className="h-full">
+        <div>
           <Main />
         </div>
       </div>

@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import { LoginIcon, LockClosedIcon } from '@heroicons/react/outline';
 
 const styleInput = `border-b-2 border-indigo-400
-  flex tracking-wide
-  focus:outline-none
-  p-3 text-center mb-2
-  text-gray-700 text-sm font-bold
-  w-5/6`;
+  flex focus:outline-none
+  font-bold mb-2 p-3
+  placeholder-indigo-700
+  placeholder-opacity-25
+  text-center text-gray-700
+  text-sm tracking-wide w-5/6`;
 
 export default class Form extends Component {
   render() {
@@ -26,22 +27,14 @@ export default class Form extends Component {
               placeholder="Senha"
             />
             <button
-              className="
-                bg-gradient-to-r
-                flex focus:ring
-                font-semibold
-                from-blue-700
-                hover:border-blue-400
-                hover:from-blue-300
-                hover:text-gray-500
-                justify-center
-                mt-2 p-2 ring-indigo-200
-                ring-offset-2
-                rounded-sm
-                text-opacity-80
-                text-white
-                to-blue-400
-                w-4/6"
+              className="bg-gradient-to-r
+                flex focus:ring font-semibold
+                from-blue-700 hover:border-blue-400
+                hover:from-blue-300 hover:text-gray-500
+                justify-center mt-2 p-2
+                ring-indigo-200 ring-offset-2
+                rounded-sm text-opacity-80
+                text-white to-blue-400 w-4/6"
             >
               Entrar
             </button>

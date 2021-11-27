@@ -5,7 +5,7 @@ import image from '../image/undraw_secure_login_pdn4.svg';
 export default class Main extends Component {
   render() {
     return (
-      <div className="flex h-screen">
+      <div className="flex h-screen w-full">
         <section className="
           flex flex-col bg-black
           items-center
@@ -19,8 +19,7 @@ export default class Main extends Component {
             <h1 className="
               font-extrabold text-5xl
               tracking-tight
-              text-blue-500
-              text-opacity-50"
+              text-indigo-700"
             >
             Seja bem vindo
             </h1>
@@ -32,10 +31,8 @@ export default class Main extends Component {
         
         <section className="
           flex flex-col items-center
-          justify-center
-          bg-white
-          box-border
-          w-1/3"
+          justify-center bg-white
+          box-border w-1/3"
         >
           <Form />
         </section>
