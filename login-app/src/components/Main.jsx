@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Form from './Form';
-import image from '../image/undraw_secure_login_pdn4.svg';
+import image from '../image/undraw_shopping_app_flsj.svg';
 
 export default class Main extends Component {
   render() {
@@ -12,7 +12,7 @@ export default class Main extends Component {
           justify-center
           w-2/3"
         >
-          <div className="flex flex-cols w-1/2 mb-10">
+          <div className="flex flex-cols w-96 mb-10">
             <img src={ image } alt={ image } />
           </div>
           <div className="flex flex-col items-center">
