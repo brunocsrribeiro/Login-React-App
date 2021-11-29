@@ -7,7 +7,10 @@ export default class Main extends Component {
     return (
       <div className="flex h-screen w-full">
         <section className="
-          flex flex-col bg-black
+          flex flex-col bg-gradient-to-r
+          from-green-800
+          via-green-300
+          to-green-50
           items-center
           justify-center
           w-2/3"
@@ -19,11 +22,11 @@ export default class Main extends Component {
             <h1 className="
               font-extrabold text-5xl
               tracking-tight
-              text-indigo-700"
+              text-white"
             >
             Seja bem vindo
             </h1>
-            <p className="font-semibold text-center text-white">
+            <p className="font-semibold text-center text-gray-700">
               Faça seu login
             </p>
           </div>

@@ -14,7 +14,7 @@ export default class Header extends Component {
         <Link to="/" className="flex">
           <div className="box-border flex items-center p-2">
             <h1 className="font font-extrabold text-4xl
-              text-indigo-600
+              text-green-800
               tracking-tight"
             >
               ShopPutz
@@ -23,7 +23,7 @@ export default class Header extends Component {
         </Link>
         <Link to="/" className="flex">
           <div className="flex">
-            <ShoppingCartIcon className="text-indigo-600 w-1/2" />
+            <ShoppingCartIcon className="text-green-400 w-1/2" />
           </div>
         </Link>
       </nav>
