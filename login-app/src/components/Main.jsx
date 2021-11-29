@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Form from './Form';
-import image from '../image/undraw_shopping_app_flsj.svg';
+import image from '../image/undraw_online_shopping_re_k1sv.svg';
 
 export default class Main extends Component {
   render() {
@@ -10,7 +10,6 @@ export default class Main extends Component {
           flex flex-col bg-gradient-to-r
           from-green-800
           via-green-300
-          to-green-50
           items-center
           justify-center
           w-2/3"

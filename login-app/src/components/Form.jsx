@@ -33,7 +33,7 @@ export default class Form extends Component {
                 hover:from-green-300 hover:text-gray-800
                 justify-center mt-2 p-2
                 ring-indigo-200 ring-offset-2
-                rounded-sm text-white
+                rounded-lg text-white
                 to-green-400 w-4/6"
             >
               Entrar

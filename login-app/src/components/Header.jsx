@@ -6,9 +6,9 @@ export default class Header extends Component {
   render() {
     return (
       <nav className="bg-gradient-to-r
-        border-b-2 border-gray-200
-        fixed flex from-gray-200
-         h-16 justify-between px-5
+        border-b-2 fixed flex
+        from-gray-200 h-20
+        justify-between px-5
         to-gray-100 w-full"
       >
         <Link to="/" className="flex">
@@ -23,7 +23,7 @@ export default class Header extends Component {
         </Link>
         <Link to="/" className="flex">
           <div className="flex">
-            <ShoppingCartIcon className="text-green-400 w-1/2" />
+            <ShoppingCartIcon className="text-green-800 w-1/2" />
           </div>
         </Link>
       </nav>
