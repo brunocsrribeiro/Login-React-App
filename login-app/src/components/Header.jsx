@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { ShoppingCartIcon  } from '@heroicons/react/outline';
 import { Link } from 'react-router-dom';
+import InputSearch from './InputSearch';
 
 export default class Header extends Component {
   render() {
@@ -8,7 +9,7 @@ export default class Header extends Component {
       <nav className="bg-gradient-to-r
         border-b-2 fixed flex
         from-gray-200 h-20
-        justify-between px-5
+        justify-around px-5
         to-gray-100 w-full"
       >
         <Link to="/" className="flex">
@@ -21,6 +22,7 @@ export default class Header extends Component {
             </h1>
           </div>
         </Link>
+        <InputSearch />
         <Link to="/" className="flex">
           <div className="flex">
             <ShoppingCartIcon className="text-green-800 w-1/2" />
