@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ShoppingCartIcon  } from '@heroicons/react/outline';
+import { UserCircleIcon  } from '@heroicons/react/outline';
 import { Link } from 'react-router-dom';
 import InputSearch from './InputSearch';
 
@@ -12,10 +12,10 @@ export default class Header extends Component {
         justify-between px-5
         to-gray-100 w-full"
       >
-        <Link to="/" className="flex">
+        <Link to="/" className="flex focus:outline-none">
           <div className="box-border flex items-center">
             <h1 className="font font-extrabold text-4xl
-              text-green-800
+              text-green-800 hover:text-green-500
               tracking-tight"
             >
               ShopPutz
@@ -25,9 +25,11 @@ export default class Header extends Component {
         <div className="flex w-full justify-center">
           <InputSearch />
         </div>
-        <Link to="/" className="flex">
+        <Link to="/" className="flex focus:outline-none">
           <div className="flex justify-center">
-            <ShoppingCartIcon className="text-green-800 w-1/2" />
+            <UserCircleIcon className="text-green-800
+              hover:text-green-400 w-1/2"
+            />
           </div>
         </Link>
       </nav>

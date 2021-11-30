@@ -15,17 +15,19 @@ export default class Form extends Component {
     return (
       <>
         <form className="flex flex-col items-center w-full max-w-lg">
-            <LoginIcon className="relative -bottom-11 -left-44 w-8 text-green-400" />
+            {/* <LoginIcon className="relative -bottom-11 -left-44 w-8 text-green-400" /> */}
             <input 
               type="email"
               className= { styleInput }
               placeholder="Email/Usuário"
+              required
             />
-            <LockClosedIcon className="relative -bottom-10 -left-44 w-8 text-green-400" />
+            {/* <LockClosedIcon className="relative -bottom-10 -left-44 w-8 text-green-400" /> */}
             <input
               type="password"
               className={ styleInput }
               placeholder="Senha"
+              required
             />
             <button
               className="bg-gradient-to-r
@@ -34,17 +36,21 @@ export default class Form extends Component {
                 hover:from-green-400
                 hover:via-green-500 hover:to-green-400
                 hover:text-gray-800
+                hover:shadow-outline
                 justify-center mt-2 mb-6 p-2
                 ring-indigo-200 ring-offset-2
-                rounded-lg text-white
-                to-green-500 w-4/6"
+                rounded-lg shadow text-white
+                to-green-500
+                focus:outline-none w-4/6"
             >
               Entrar
             </button>
             <Link className="flex align-baseline
               font-bold text-sm
               text-green-400
-              hover:text-green-600">
+              hover:text-green-600
+              focus:outline-none"
+            >
               Esqueci minha senha?
             </Link>
           </form>
