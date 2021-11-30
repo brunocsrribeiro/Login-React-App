@@ -9,15 +9,15 @@ export default class InputSearch extends Component {
       >
         <input
           type="text"
-          className="rounded-full w-full
-          py-2 pl-8 focus:outline-none
+          className="appearance-none focus:shadow-outline
+          border border-green-400
+          font-semibold shadow
           placeholder-green-700
           placeholder-opacity-25
-          text-sm tracking-wide
-          font-semibold shadow
-          appearance-none focus:shadow-outline
-          border border-green-400
-          text-green-600"
+          py-2 pl-8 focus:outline-none
+          rounded-full w-full
+          text-green-600
+          text-sm tracking-wide"
           placeholder="Pesquisar"
         />
         <button type="submit" className="rounded-full">

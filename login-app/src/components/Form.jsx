@@ -30,12 +30,14 @@ export default class Form extends Component {
             <button
               className="bg-gradient-to-r
                 flex focus:ring font-semibold
-                from-green-700 hover:border-green-400
-                hover:from-green-300 hover:text-gray-800
+                from-green-500 via-green-400 hover:border-green-400
+                hover:from-green-400
+                hover:via-green-500 hover:to-green-400
+                hover:text-gray-800
                 justify-center mt-2 mb-6 p-2
                 ring-indigo-200 ring-offset-2
                 rounded-lg text-white
-                to-green-400 w-4/6"
+                to-green-500 w-4/6"
             >
               Entrar
             </button>

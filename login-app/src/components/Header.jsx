@@ -9,11 +9,11 @@ export default class Header extends Component {
       <nav className="bg-gradient-to-r
         border-b-2 fixed flex
         from-gray-200 h-20
-        justify-around px-5
+        justify-between px-5
         to-gray-100 w-full"
       >
         <Link to="/" className="flex">
-          <div className="box-border flex items-center p-2">
+          <div className="box-border flex items-center">
             <h1 className="font font-extrabold text-4xl
               text-green-800
               tracking-tight"
@@ -22,9 +22,11 @@ export default class Header extends Component {
             </h1>
           </div>
         </Link>
-        <InputSearch />
+        <div className="flex w-full justify-center">
+          <InputSearch />
+        </div>
         <Link to="/" className="flex">
-          <div className="flex">
+          <div className="flex justify-center">
             <ShoppingCartIcon className="text-green-800 w-1/2" />
           </div>
         </Link>
