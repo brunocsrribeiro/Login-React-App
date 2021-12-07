@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { LoginIcon, LockClosedIcon } from '@heroicons/react/outline';
+// import { LoginIcon, LockClosedIcon } from '@heroicons/react/outline';
 import { Link } from 'react-router-dom';
 
 const styleInput = `border-b-2 border-green-400
