@@ -53,6 +53,14 @@ export default class Form extends Component {
             >
               Esqueci minha senha?
             </Link>
+            <Link className="flex align-baseline
+              font-bold text-sm
+              text-green-400
+              hover:text-green-600
+              focus:outline-none"
+            >
+              Cadastre-se
+            </Link>
           </form>
       </>
     );

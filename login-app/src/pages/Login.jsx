@@ -25,7 +25,7 @@ class Login extends Component {
             >
             Seja bem vindo
             </h1>
-            <p className="font-semibold text-center text-gray-700">
+            <p className="animate-bounce font-semibold text-center text-gray-700 mt-2">
               Faça seu login
             </p>
           </div>

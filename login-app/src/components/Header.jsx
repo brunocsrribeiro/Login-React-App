@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { UserCircleIcon  } from '@heroicons/react/outline';
+import { ShoppingCartIcon, UserCircleIcon  } from '@heroicons/react/outline';
 import { Link } from 'react-router-dom';
 import InputSearch from './InputSearch';
 
@@ -25,11 +25,22 @@ export default class Header extends Component {
         <div className="flex w-full justify-center">
           <InputSearch />
         </div>
-        <Link to="/" className="flex focus:outline-none">
-          <div className="flex justify-center">
-            <UserCircleIcon className="text-green-800
-              hover:text-green-400 w-1/2"
-            />
+        <Link to="#" className="flex focus:outline-none justify-center">
+          <div className="flex justify-center text-green-800
+              hover:text-green-400 w-2/3 animate-pulse">
+            <UserCircleIcon />
+            <span className="flex items-center
+              font-bold text-md
+              focus:outline-none"
+            >
+              Login
+            </span>
+          </div>
+        </Link>
+        <Link to="#" className="flex focus:outline-none justify-center">
+          <div className="flex justify-center text-green-800
+              hover:text-green-400 w-3/6">
+            <ShoppingCartIcon />
           </div>
         </Link>
       </nav>
