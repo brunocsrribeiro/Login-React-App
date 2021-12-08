@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import image from '../image/undraw_business_shop_qw-5-t.svg';
+import image from '../image/undraw_mobile_life_re_jtih.svg';
 
 export default class Home extends Component {
   render() {
@@ -11,19 +11,13 @@ export default class Home extends Component {
           <img src={ image } alt="shop-puts-family" className="mt-32 mb-9 ml-20"/>
         </div>
         <div className="flex flex-col items-center justify-center w-2/3">
-          <div className="flex items-center flex-col mb-4 w-full">
-            <h1 className="font-extrabold text-9xl
-            tracking-tight text-green-800"
+          <div className="flex items-center justify-center w-full">
+            <h1 className="bg-clip-text text-transparent
+            bg-gradient-to-r from-green-800 via-green-500 to-blue-800
+            font-extrabold text-9xl tracking-tight py-4"
             >
-              ShopPutz
+              Lifestyle
             </h1>
-          </div>
-          <div className="flex">
-            <p className="font-semibold text-gray-700
-              uppercase antialiased"
-            >
-              O shopping de variedades para você e toda sua família
-            </p>
           </div>
         </div>
       </section>

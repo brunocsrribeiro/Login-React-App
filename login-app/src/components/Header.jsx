@@ -15,10 +15,12 @@ export default class Header extends Component {
         <Link to="/" className="flex focus:outline-none">
           <div className="box-border flex items-center">
             <h1 className="font font-extrabold text-4xl
-              text-green-800 hover:text-green-500
+              bg-clip-text text-transparent
+              bg-gradient-to-r from-green-800 via-green-500
+              to-blue-800 hover:text-green-500
               tracking-tight"
             >
-              ShopPutz
+              Lifestyle
             </h1>
           </div>
         </Link>
