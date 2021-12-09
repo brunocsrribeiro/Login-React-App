@@ -1,0 +1,21 @@
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
+class Registerform extends Component {
+  render() {
+    return (
+      <div>
+        <Link className="flex align-baseline 
+          font-bold text-sm
+          text-green-400
+          hover:text-green-600
+          focus:outline-none"
+        >
+          Cadastre-se
+        </Link>
+      </div>
+    );
+  }
+}
+
+export default Registerform;

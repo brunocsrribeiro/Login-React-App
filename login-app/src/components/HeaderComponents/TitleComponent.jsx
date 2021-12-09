@@ -10,10 +10,10 @@ class Titlecomponent extends Component {
             <h1 className="font font-extrabold text-4xl
               bg-clip-text text-transparent
               bg-gradient-to-r from-green-800 via-green-500
-              to-blue-800 hover:text-green-500
+              to-blue-800 hover:text-green-600
               tracking-tight"
             >
-              Lifestyle
+              Showcase
             </h1>
           </div>
         </Link>

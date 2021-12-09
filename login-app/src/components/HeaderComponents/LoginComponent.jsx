@@ -8,7 +8,7 @@ class Logincomponent extends Component {
     return (
       <div>
         <Link to="#" className="flex focus:outline-none
-          justify-center animate-pulse"
+          justify-center"
         >
           <div>
             <UserCircleIcon />

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Form from '../components/Form';
-import image from '../image/undraw_online_connection_6778.svg';
+import Form from '../components/FormComponents/Form';
+import image from '../image/undraw_authentication_fsn5.svg';
 
 class Login extends Component {
   render() {

@@ -4,8 +4,8 @@ import Titlecomponent from './TitleComponent';
 import InputSearch from './InputSearch';
 import Logincomponent from './LoginComponent';
 
-const styledComponentIcons = `flex text-green-800
-  hover:text-green-400 items-center justify-center`;
+const styledComponentIcons = `flex text-green-400
+  hover:text-green-600 items-center justify-center`;
 
 export default class Header extends Component {
   render() {
