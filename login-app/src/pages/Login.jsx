@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Form from '../components/Form';
-import image from '../image/undraw_online_shopping_re_k1sv.svg';
+import image from '../image/undraw_online_connection_6778.svg';
 
 class Login extends Component {
   render() {
@@ -25,7 +25,9 @@ class Login extends Component {
             >
             Seja bem vindo
             </h1>
-            <p className="animate-bounce font-semibold text-center text-gray-700 mt-2">
+            <p className="animate-bounce font-semibold
+              text-center text-xl text-gray-700 mt-3"
+            >
               Faça seu login
             </p>
           </div>
