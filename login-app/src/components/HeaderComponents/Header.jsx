@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import Titlecomponent from './HeaderComponents/TitleComponent';
-import InputSearch from './HeaderComponents/InputSearch';
-import Logincomponent from './HeaderComponents/LoginComponent';
+import Titlecomponent from './TitleComponent';
+import InputSearch from './InputSearch';
+import Logincomponent from './LoginComponent';
 
 const styledComponentIcons = `flex text-green-800
   hover:text-green-400 items-center justify-center`;
