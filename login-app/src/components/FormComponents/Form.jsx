@@ -6,18 +6,18 @@ import Buttonenterform from './ButtonEnterForm';
 import Forgotpassword from './ForgotPassword';
 import Registerform from './RegisterForm';
 
+const formStyled = `flex flex-col items-center w-full`;
+
 export default class Form extends Component {
   render() {
     return (
-      <div className="w-full">
-        <form className="flex flex-col items-center">
-            <Inputemailform />
-            <Inputpassform />
-            <Buttonenterform />
-            <Forgotpassword />
-            <Registerform />
-          </form>
-      </div>
+        <form className={ formStyled }>
+          <Inputemailform />
+          <Inputpassform />
+          <Buttonenterform />
+          <Forgotpassword />
+          <Registerform />
+        </form>
     );
   }
 }

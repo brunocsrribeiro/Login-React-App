@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import Header from './components/HeaderComponents/Header';
-import Main from './components/MainComponents/Main';
+// import Home from './pages/Home';
+import Login from './pages/Login';
 
 export default class App extends Component {
   render() {
     return (
         <div>
-          <Header />
-          <Main />
+          {/* <Home /> */}
+          <Login />
         </div>
     );
   }
