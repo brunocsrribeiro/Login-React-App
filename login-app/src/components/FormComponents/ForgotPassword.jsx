@@ -9,8 +9,7 @@ class Forgotpassword extends Component {
   render() {
     return (
       <div>
-        <Link className={ linkStyled }
-        >
+        <Link className={ linkStyled }>
           Esqueci minha senha?
         </Link>
       </div>

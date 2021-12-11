@@ -9,12 +9,31 @@ const styleInput = `border-b-2 border-green-400
   text-sm tracking-wide w-full`;
 
 class Inputpassform extends Component {
+  constructor(){
+    super();
+
+    this.state = {
+      typedPassword: '',
+    };
+
+    this.handleChange = this.handleChange.bind(this);
+  };
+
+  handleChange({ target }) {
+    const { value } = target;
+
+    this.setState({
+      typedPassword: value,
+    });
+  };
+
   render() {
     return (
       <div className="w-9/12">
         <input
           type="password"
           className={ styleInput }
+          onChange={ this.handleChange }
           placeholder="Senha"
           required
         />

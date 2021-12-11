@@ -11,8 +11,7 @@ class Registerform extends Component {
   render() {
     return (
       <div>
-        <Link className={ linkStyled }
-        >
+        <Link className={ linkStyled }>
           Cadastre-se
         </Link>
       </div>

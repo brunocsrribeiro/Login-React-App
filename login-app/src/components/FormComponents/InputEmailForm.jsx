@@ -9,12 +9,31 @@ const styleInput = `border-b-2 border-green-400
   text-sm tracking-wide w-full`;
 
 class Inputemailform extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      typedEmail: '',
+    };
+
+    this.handleChange = this.handleChange.bind(this);
+  };
+
+  handleChange({ target }) {
+    const { value } = target;
+
+    this.setState({
+      typedEmail: value,
+    });
+  };
+
   render() {
     return (
       <div className="w-9/12">
         <input
           type="email"
           className= { styleInput }
+          onChange={ this.handleChange }
           placeholder="Email/Usuário"
           required
         />

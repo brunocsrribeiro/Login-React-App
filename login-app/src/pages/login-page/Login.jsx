@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import Form from '../components/FormComponents/Form';
-import image from '../image/undraw_authentication_fsn5.svg';
+import Form from '../../components/FormComponents/Form';
+import Header from '../../components/HeaderComponents/Header';
+import image from '../../image/undraw_authentication_fsn5.svg';
 
 const divLogin = `flex h-screen w-full`;
 
@@ -25,6 +26,7 @@ class Login extends Component {
   render() {
     return (
       <div className={ divLogin }>
+        <Header />
         <section className={ sectionLogin }>
           <div className={ divImageLogin }>
             <img src={ image } alt={ image } />

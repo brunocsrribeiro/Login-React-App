@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-// import Home from './pages/Home';
-import Login from './pages/Login';
+// import Home from './pages/home-page/Home';
+import Login from './pages/login-page/Login';
 
 export default class App extends Component {
   render() {

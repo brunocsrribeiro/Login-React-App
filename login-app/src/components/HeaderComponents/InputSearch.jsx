@@ -22,12 +22,30 @@ hover:text-white hover:bg-green-400
 rounded-full`;
 
 export default class InputSearch extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      typedText: '',
+    };
+
+    this.handleChange = this.handleChange.bind(this);
+  };
+
+  handleChange({ target }) {
+    const { value } = target;
+    this.setState({
+      typedText: value,
+    });
+  };
+
   render() {
     return (
       <div className={ divInputSearch }>
         <input
           type="text"
           className={ InputSearchText }
+          onChange={ this.handleChange }
           placeholder="Pesquisar"
         />
         <button type="submit" className={ buttonStyled }>

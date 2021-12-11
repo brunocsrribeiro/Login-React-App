@@ -12,18 +12,14 @@ focus:outline-none`;
 export default class Logincomponent extends Component {
   render() {
     return (
-      <div>
-        <Link to="/login" className={ linkStyled }
-        >
-          <div>
-            <UserCircleIcon />
-            <span className={ spanStyled }
-            >
-              Login
-            </span>
-          </div>
-        </Link>
-      </div>
+      <Link to="/login" className={ linkStyled }>
+        <div>
+          <UserCircleIcon />
+          <span className={ spanStyled }>
+            Login
+          </span>
+        </div>
+      </Link>
     );
   }
 }

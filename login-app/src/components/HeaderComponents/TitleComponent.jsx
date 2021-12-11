@@ -12,16 +12,11 @@ const linkStyled = `flex focus:outline-none`;
 class Titlecomponent extends Component {
   render() {
     return (
-      <div>
-        <Link to="/" className={ linkStyled }>
-          <div>
-            <h1 className={ headingStyled }
-            >
-              Showcase
-            </h1>
-          </div>
-        </Link>
-      </div>
+      <Link to="/" className={ linkStyled }>
+        <h1 className={ headingStyled }>
+          Showcase
+        </h1>
+      </Link>
     );
   }
 }

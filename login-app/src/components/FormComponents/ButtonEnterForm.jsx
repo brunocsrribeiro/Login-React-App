@@ -14,8 +14,7 @@ class Buttonenterform extends Component {
   render() {
     return (
       <div className={ divButton }>
-        <button className={ buttonForm }
-        >
+        <button className={ buttonForm }>
           Entrar
         </button>
       </div>
