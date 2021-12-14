@@ -6,7 +6,7 @@ import Buttonenterform from './ButtonEnterForm';
 import Forgotpassword from './ForgotPassword';
 import Registerform from './RegisterForm';
 
-const formStyled = `flex flex-col items-center w-full`;
+const formStyled = `flex flex-col items-center w-11/12 p-6`;
 
 export default class Form extends Component {
   constructor() {

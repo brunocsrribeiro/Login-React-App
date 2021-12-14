@@ -12,8 +12,9 @@ const styleInput = `border-b-2 border-green-400
   export default class Inputpassform extends Component {
   render() {
     const { password, handleChange } = this.props;
+
     return (
-      <div className="w-9/12">
+      <div className="w-full">
         <input
           type="password"
           value={ password }
