@@ -17,7 +17,7 @@ const headingWelcome = `font-extrabold text-5xl
 tracking-tight text-white`;
 
 const paragraphLogin = `animate-bounce font-semibold
-text-center text-xl text-gray-700 mt-3`;
+text-center text-xl text-blue-900 mt-3`;
 
 const sectionForm = `flex flex-col items-center
 justify-center bg-white box-border w-1/3`;
