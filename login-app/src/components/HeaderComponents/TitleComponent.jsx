@@ -8,7 +8,7 @@ bg-clip-text text-transparent
 bg-gradient-to-r from-green-800 via-green-500
 to-blue-800 tracking-tight`;
 
-class Titlecomponent extends Component {
+export default class Titlecomponent extends Component {
   render() {
     return (
       <Link to="/" className={ linkStyled }>
@@ -19,5 +19,3 @@ class Titlecomponent extends Component {
     );
   }
 }
-
-export default Titlecomponent;

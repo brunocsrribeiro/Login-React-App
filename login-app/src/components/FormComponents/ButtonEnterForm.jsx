@@ -10,7 +10,7 @@ hover:text-gray-800 hover:shadow-outline justify-center
 mt-2 mb-6 p-2 ring-indigo-200 ring-offset-2 rounded-lg
 shadow text-white to-green-500 focus:outline-none w-full`;
 
-class Buttonenterform extends Component {
+export default class Buttonenterform extends Component {
   render() {
     return (
       <div className={ divButton }>
@@ -21,5 +21,3 @@ class Buttonenterform extends Component {
     );
   }
 }
-
-export default Buttonenterform;

@@ -22,7 +22,7 @@ text-center text-xl text-blue-900 mt-3`;
 const sectionForm = `flex flex-col items-center
 justify-center bg-white box-border w-1/3`;
 
-class Login extends Component {
+export default class Login extends Component {
   render() {
     return (
       <div className={ divLogin }>
@@ -48,5 +48,3 @@ class Login extends Component {
     );
   }
 }
-
-export default Login;

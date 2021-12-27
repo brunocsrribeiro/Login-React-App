@@ -7,7 +7,7 @@ text-green-400
 hover:text-green-600
 focus:outline-none`;
 
-class Registerform extends Component {
+export default class Registerform extends Component {
   render() {
     return (
       <div>
@@ -18,5 +18,3 @@ class Registerform extends Component {
     );
   }
 }
-
-export default Registerform;

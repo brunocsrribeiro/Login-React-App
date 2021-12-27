@@ -5,7 +5,7 @@ const linkStyled = `flex align-baseline items-center
 font-bold text-sm text-green-400 mb-2
 hover:text-green-600 focus:outline-none`;
 
-class Forgotpassword extends Component {
+export default class Forgotpassword extends Component {
   render() {
     return (
       <div>
@@ -16,5 +16,3 @@ class Forgotpassword extends Component {
     );
   }
 }
-
-export default Forgotpassword;
