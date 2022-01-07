@@ -1,25 +1,21 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-class Titlecomponent extends Component {
+const linkStyled = `flex focus:outline-none`;
+
+const headingStyled = `font font-extrabold text-4xl
+bg-clip-text text-transparent
+bg-gradient-to-r from-green-800 via-green-500
+to-blue-800 tracking-tight`;
+
+export default class Titlecomponent extends Component {
   render() {
     return (
-      <div>
-        <Link to="/" className="flex focus:outline-none">
-          <div>
-            <h1 className="font font-extrabold text-4xl
-              bg-clip-text text-transparent
-              bg-gradient-to-r from-green-800 via-green-500
-              to-blue-800 hover:text-green-600
-              tracking-tight"
-            >
-              Showcase
-            </h1>
-          </div>
-        </Link>
-      </div>
+      <Link to="/" className={ linkStyled }>
+        <h1 className={ headingStyled }>
+          Carthuum
+        </h1>
+      </Link>
     );
   }
 }
-
-export default Titlecomponent;

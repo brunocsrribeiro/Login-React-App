@@ -6,18 +6,45 @@ import Buttonenterform from './ButtonEnterForm';
 import Forgotpassword from './ForgotPassword';
 import Registerform from './RegisterForm';
 
+const formStyled = `flex flex-col items-center w-11/12 p-6`;
+
 export default class Form extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      email: '',
+      password: '',
+    };
+  }
+
+  handleChange = ({ target }) => {
+    const { name, value } = target;
+    this.setState({
+      [name]: value,
+    });
+  };
+
+  handleSubmit = (evt) => {
+    evt.preventDefault();
+    
+    // this.setState({
+    //   email: '',
+    //   password: '',
+    // });
+  };
+
   render() {
+    const { email, password } = this.state;
+    
     return (
-      <div className="w-full">
-        <form className="flex flex-col items-center">
-            <Inputemailform />
-            <Inputpassform />
-            <Buttonenterform />
-            <Forgotpassword />
-            <Registerform />
-          </form>
-      </div>
+        <form className={ formStyled } onSubmit={ this.handleSubmit }>
+          <Inputemailform email={ email } handleChange={ this.handleChange } />
+          <Inputpassform password={ password } handleChange={ this.handleChange } />
+          <Buttonenterform />
+          <Forgotpassword />
+          <Registerform />
+        </form>
     );
   }
 }

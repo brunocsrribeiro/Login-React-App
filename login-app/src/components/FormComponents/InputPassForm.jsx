@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 const styleInput = `border-b-2 border-green-400
   flex focus:outline-none
@@ -8,12 +9,17 @@ const styleInput = `border-b-2 border-green-400
   text-center text-green-600
   text-sm tracking-wide w-full`;
 
-class Inputpassform extends Component {
+  export default class Inputpassform extends Component {
   render() {
+    const { password, handleChange } = this.props;
+
     return (
-      <div className="w-9/12">
+      <div className="w-full">
         <input
           type="password"
+          value={ password }
+          onChange={ handleChange }
+          name="password"
           className={ styleInput }
           placeholder="Senha"
           required
@@ -23,4 +29,7 @@ class Inputpassform extends Component {
   }
 }
 
-export default Inputpassform;
+Inputpassform.propTypes = {
+  password: PropTypes.string.isRequired,
+  handleChange: PropTypes.func.isRequired,
+};
