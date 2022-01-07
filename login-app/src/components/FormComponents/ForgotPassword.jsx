@@ -9,7 +9,7 @@ export default class Forgotpassword extends Component {
   render() {
     return (
       <div>
-        <Link className={ linkStyled }>
+        <Link to="" className={ linkStyled }>
           Esqueci minha senha?
         </Link>
       </div>

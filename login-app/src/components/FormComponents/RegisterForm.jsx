@@ -11,7 +11,7 @@ export default class Registerform extends Component {
   render() {
     return (
       <div>
-        <Link className={ linkStyled }>
+        <Link to="" className={ linkStyled }>
           Cadastre-se
         </Link>
       </div>
