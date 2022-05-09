@@ -6,9 +6,9 @@ const SERVER_ENV = process.env.SERVER_ENV || null
 const app = express();
 
 app.get('/', (req, res) => {
-  if (SERVER_ENV) {
+  if (SERVER_ENV === 'test') {
     return res.status(200)
-      .send({ message: `Dummy endpoint running on enviroment ${SERVER_ENV}` });
+      .send({ message: `Dummy endpoint running on enviroment ${SERVER_ENV} now with CI/CD` });
   }
 
   return res.status(200).send({ message: 'Dummy endpoint' });
