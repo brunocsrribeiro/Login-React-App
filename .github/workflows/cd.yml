@@ -9,17 +9,16 @@ jobs:
   deploy-test:
     name: Deploy to Heroku on Test Env
     runs-on: ubuntu-latest
-
   steps:
-    - uses: actions/checkout@v2
     - name: Checkout the code
+      uses: actions/checkout@v2
 
-    - uses: akhileshns/heroku-deploy@v3.11.10
     - name: Deploy to Heroku containers
+      uses: akhileshns/heroku-deploy@v3.11.10
       with:
         heroku_api_key: ${{secrets.HEROKU_API_KEY}}
         heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
-        heroku_email: r${{secrets.HEROKU_EMAIL}}
+        heroku_email: ${{secrets.HEROKU_EMAIL}}
         usedocker: true
       env:
         SERVER_ENV: test
